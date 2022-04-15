@@ -21,3 +21,4 @@ pub type JsSyntaxElement = rome_rowan::SyntaxElement<JsLanguage>;
 pub type JsSyntaxNodeChildren = rome_rowan::SyntaxNodeChildren<JsLanguage>;
 pub type JsSyntaxElementChildren = rome_rowan::SyntaxElementChildren<JsLanguage>;
 pub type JsSyntaxList = rome_rowan::SyntaxList<JsLanguage>;
+pub type JsSyntaxTrivia = rome_rowan::syntax::SyntaxTrivia<JsLanguage>;
