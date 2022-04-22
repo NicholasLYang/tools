@@ -255,6 +255,7 @@ impl AstNode for JsonArray {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsonArray {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -288,6 +289,7 @@ impl AstNode for JsonBoolean {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsonBoolean {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -317,6 +319,7 @@ impl AstNode for JsonMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsonMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -347,6 +350,7 @@ impl AstNode for JsonNull {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsonNull {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -372,6 +376,7 @@ impl AstNode for JsonNumber {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsonNumber {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -400,6 +405,7 @@ impl AstNode for JsonObject {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsonObject {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -433,6 +439,7 @@ impl AstNode for JsonRoot {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsonRoot {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -458,6 +465,7 @@ impl AstNode for JsonString {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsonString {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -532,6 +540,17 @@ impl AstNode for JsonValue {
             JsonValue::JsonObject(it) => &it.syntax,
             JsonValue::JsonString(it) => &it.syntax,
             JsonValue::JsonUnknown(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsonValue::JsonArray(it) => it.syntax,
+            JsonValue::JsonBoolean(it) => it.syntax,
+            JsonValue::JsonNull(it) => it.syntax,
+            JsonValue::JsonNumber(it) => it.syntax,
+            JsonValue::JsonObject(it) => it.syntax,
+            JsonValue::JsonString(it) => it.syntax,
+            JsonValue::JsonUnknown(it) => it.syntax,
         }
     }
 }
@@ -637,6 +656,7 @@ impl AstNode for JsonUnknown {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsonUnknown {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -681,6 +701,7 @@ impl AstNode for JsonArrayElementList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for JsonArrayElementList {
     type Language = Language;
@@ -733,6 +754,7 @@ impl AstNode for JsonMemberList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for JsonMemberList {
     type Language = Language;

@@ -9679,6 +9679,7 @@ impl AstNode for ImportMeta {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for ImportMeta {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -9709,6 +9710,7 @@ impl AstNode for JsArrayAssignmentPattern {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsArrayAssignmentPattern {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -9742,6 +9744,7 @@ impl AstNode for JsArrayAssignmentPatternRestElement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsArrayAssignmentPatternRestElement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -9771,6 +9774,7 @@ impl AstNode for JsArrayBindingPattern {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsArrayBindingPattern {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -9804,6 +9808,7 @@ impl AstNode for JsArrayBindingPatternRestElement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsArrayBindingPatternRestElement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -9833,6 +9838,7 @@ impl AstNode for JsArrayExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsArrayExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -9866,6 +9872,7 @@ impl AstNode for JsArrayHole {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsArrayHole {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -9889,6 +9896,7 @@ impl AstNode for JsArrowFunctionExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsArrowFunctionExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -9931,6 +9939,7 @@ impl AstNode for JsAssignmentExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsAssignmentExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -9961,6 +9970,7 @@ impl AstNode for JsAssignmentWithDefault {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsAssignmentWithDefault {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -9988,6 +9998,7 @@ impl AstNode for JsAwaitExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsAwaitExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10017,6 +10028,7 @@ impl AstNode for JsBigIntLiteralExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsBigIntLiteralExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10045,6 +10057,7 @@ impl AstNode for JsBinaryExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsBinaryExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10075,6 +10088,7 @@ impl AstNode for JsBindingPatternWithDefault {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsBindingPatternWithDefault {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10102,6 +10116,7 @@ impl AstNode for JsBlockStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsBlockStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10135,6 +10150,7 @@ impl AstNode for JsBooleanLiteralExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsBooleanLiteralExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10163,6 +10179,7 @@ impl AstNode for JsBreakStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsBreakStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10199,6 +10216,7 @@ impl AstNode for JsCallArguments {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsCallArguments {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10232,6 +10250,7 @@ impl AstNode for JsCallExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsCallExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10266,6 +10285,7 @@ impl AstNode for JsCaseClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsCaseClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10297,6 +10317,7 @@ impl AstNode for JsCatchClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsCatchClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10330,6 +10351,7 @@ impl AstNode for JsCatchDeclaration {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsCatchDeclaration {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10367,6 +10389,7 @@ impl AstNode for JsClassDeclaration {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsClassDeclaration {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10421,6 +10444,7 @@ impl AstNode for JsClassExportDefaultDeclaration {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsClassExportDefaultDeclaration {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10475,6 +10499,7 @@ impl AstNode for JsClassExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsClassExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10525,6 +10550,7 @@ impl AstNode for JsComputedMemberAssignment {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsComputedMemberAssignment {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10559,6 +10585,7 @@ impl AstNode for JsComputedMemberExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsComputedMemberExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10597,6 +10624,7 @@ impl AstNode for JsComputedMemberName {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsComputedMemberName {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10630,6 +10658,7 @@ impl AstNode for JsConditionalExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsConditionalExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10665,6 +10694,7 @@ impl AstNode for JsConstructorClassMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsConstructorClassMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10693,6 +10723,7 @@ impl AstNode for JsConstructorParameters {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsConstructorParameters {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10726,6 +10757,7 @@ impl AstNode for JsContinueStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsContinueStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10762,6 +10794,7 @@ impl AstNode for JsDebuggerStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsDebuggerStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10794,6 +10827,7 @@ impl AstNode for JsDefaultClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsDefaultClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10827,6 +10861,7 @@ impl AstNode for JsDefaultImportSpecifier {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsDefaultImportSpecifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10856,6 +10891,7 @@ impl AstNode for JsDirective {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsDirective {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10888,6 +10924,7 @@ impl AstNode for JsDoWhileStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsDoWhileStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10931,6 +10968,7 @@ impl AstNode for JsElseClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsElseClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10957,6 +10995,7 @@ impl AstNode for JsEmptyClassMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsEmptyClassMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -10985,6 +11024,7 @@ impl AstNode for JsEmptyStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsEmptyStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11013,6 +11053,7 @@ impl AstNode for JsExport {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsExport {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11045,6 +11086,7 @@ impl AstNode for JsExportAsClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsExportAsClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11074,6 +11116,7 @@ impl AstNode for JsExportDefaultDeclarationClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsExportDefaultDeclarationClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11110,6 +11153,7 @@ impl AstNode for JsExportDefaultExpressionClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsExportDefaultExpressionClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11143,6 +11187,7 @@ impl AstNode for JsExportFromClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsExportFromClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11182,6 +11227,7 @@ impl AstNode for JsExportNamedClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsExportNamedClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11223,6 +11269,7 @@ impl AstNode for JsExportNamedFromClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsExportNamedFromClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11270,6 +11317,7 @@ impl AstNode for JsExportNamedFromSpecifier {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsExportNamedFromSpecifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11306,6 +11354,7 @@ impl AstNode for JsExportNamedShorthandSpecifier {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsExportNamedShorthandSpecifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11335,6 +11384,7 @@ impl AstNode for JsExportNamedSpecifier {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsExportNamedSpecifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11369,6 +11419,7 @@ impl AstNode for JsExpressionSnipped {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsExpressionSnipped {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11395,6 +11446,7 @@ impl AstNode for JsExpressionStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsExpressionStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11424,6 +11476,7 @@ impl AstNode for JsExtendsClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsExtendsClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11460,6 +11513,7 @@ impl AstNode for JsFinallyClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsFinallyClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11489,6 +11543,7 @@ impl AstNode for JsForInStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsForInStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11529,6 +11584,7 @@ impl AstNode for JsForOfStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsForOfStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11573,6 +11629,7 @@ impl AstNode for JsForStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsForStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11621,6 +11678,7 @@ impl AstNode for JsForVariableDeclaration {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsForVariableDeclaration {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11647,6 +11705,7 @@ impl AstNode for JsFormalParameter {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsFormalParameter {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11684,6 +11743,7 @@ impl AstNode for JsFunctionBody {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsFunctionBody {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11718,6 +11778,7 @@ impl AstNode for JsFunctionDeclaration {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsFunctionDeclaration {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11765,6 +11826,7 @@ impl AstNode for JsFunctionExportDefaultDeclaration {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsFunctionExportDefaultDeclaration {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11812,6 +11874,7 @@ impl AstNode for JsFunctionExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsFunctionExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11859,6 +11922,7 @@ impl AstNode for JsGetterClassMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsGetterClassMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11899,6 +11963,7 @@ impl AstNode for JsGetterObjectMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsGetterObjectMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11938,6 +12003,7 @@ impl AstNode for JsIdentifierAssignment {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsIdentifierAssignment {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11963,6 +12029,7 @@ impl AstNode for JsIdentifierBinding {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsIdentifierBinding {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -11988,6 +12055,7 @@ impl AstNode for JsIdentifierExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsIdentifierExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12013,6 +12081,7 @@ impl AstNode for JsIfStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsIfStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12052,6 +12121,7 @@ impl AstNode for JsImport {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsImport {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12088,6 +12158,7 @@ impl AstNode for JsImportAssertion {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsImportAssertion {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12125,6 +12196,7 @@ impl AstNode for JsImportAssertionEntry {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsImportAssertionEntry {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12158,6 +12230,7 @@ impl AstNode for JsImportBareClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsImportBareClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12187,6 +12260,7 @@ impl AstNode for JsImportCallExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsImportCallExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12216,6 +12290,7 @@ impl AstNode for JsImportDefaultClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsImportDefaultClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12251,6 +12326,7 @@ impl AstNode for JsImportNamedClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsImportNamedClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12293,6 +12369,7 @@ impl AstNode for JsImportNamespaceClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsImportNamespaceClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12330,6 +12407,7 @@ impl AstNode for JsInExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsInExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12357,6 +12435,7 @@ impl AstNode for JsInitializerClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsInitializerClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12383,6 +12462,7 @@ impl AstNode for JsInstanceofExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsInstanceofExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12413,6 +12493,7 @@ impl AstNode for JsLabeledStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsLabeledStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12446,6 +12527,7 @@ impl AstNode for JsLiteralExportName {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsLiteralExportName {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12471,6 +12553,7 @@ impl AstNode for JsLiteralMemberName {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsLiteralMemberName {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12496,6 +12579,7 @@ impl AstNode for JsLogicalExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsLogicalExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12526,6 +12610,7 @@ impl AstNode for JsMethodClassMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsMethodClassMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12574,6 +12659,7 @@ impl AstNode for JsMethodObjectMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsMethodObjectMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12617,6 +12703,7 @@ impl AstNode for JsModule {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsModule {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12648,6 +12735,7 @@ impl AstNode for JsModuleSource {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsModuleSource {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12676,6 +12764,7 @@ impl AstNode for JsName {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsName {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12704,6 +12793,7 @@ impl AstNode for JsNamedImportSpecifier {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsNamedImportSpecifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12735,6 +12825,7 @@ impl AstNode for JsNamedImportSpecifiers {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsNamedImportSpecifiers {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12768,6 +12859,7 @@ impl AstNode for JsNamespaceImportSpecifier {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsNamespaceImportSpecifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12795,6 +12887,7 @@ impl AstNode for JsNewExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsNewExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12829,6 +12922,7 @@ impl AstNode for JsNullLiteralExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsNullLiteralExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12857,6 +12951,7 @@ impl AstNode for JsNumberLiteralExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsNumberLiteralExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12885,6 +12980,7 @@ impl AstNode for JsObjectAssignmentPattern {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsObjectAssignmentPattern {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12918,6 +13014,7 @@ impl AstNode for JsObjectAssignmentPatternProperty {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsObjectAssignmentPatternProperty {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12949,6 +13046,7 @@ impl AstNode for JsObjectAssignmentPatternRest {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsObjectAssignmentPatternRest {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -12980,6 +13078,7 @@ impl AstNode for JsObjectAssignmentPatternShorthandProperty {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsObjectAssignmentPatternShorthandProperty {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13006,6 +13105,7 @@ impl AstNode for JsObjectBindingPattern {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsObjectBindingPattern {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13039,6 +13139,7 @@ impl AstNode for JsObjectBindingPatternProperty {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsObjectBindingPatternProperty {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13070,6 +13171,7 @@ impl AstNode for JsObjectBindingPatternRest {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsObjectBindingPatternRest {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13099,6 +13201,7 @@ impl AstNode for JsObjectBindingPatternShorthandProperty {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsObjectBindingPatternShorthandProperty {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13125,6 +13228,7 @@ impl AstNode for JsObjectExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsObjectExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13158,6 +13262,7 @@ impl AstNode for JsParameters {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsParameters {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13191,6 +13296,7 @@ impl AstNode for JsParenthesizedAssignment {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsParenthesizedAssignment {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13224,6 +13330,7 @@ impl AstNode for JsParenthesizedExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsParenthesizedExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13257,6 +13364,7 @@ impl AstNode for JsPostUpdateExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsPostUpdateExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13286,6 +13394,7 @@ impl AstNode for JsPreUpdateExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsPreUpdateExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13315,6 +13424,7 @@ impl AstNode for JsPrivateClassMemberName {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsPrivateClassMemberName {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13341,6 +13451,7 @@ impl AstNode for JsPrivateName {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsPrivateName {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13370,6 +13481,7 @@ impl AstNode for JsPropertyClassMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsPropertyClassMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13405,6 +13517,7 @@ impl AstNode for JsPropertyObjectMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsPropertyObjectMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13435,6 +13548,7 @@ impl AstNode for JsReferenceIdentifier {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsReferenceIdentifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13463,6 +13577,7 @@ impl AstNode for JsRegexLiteralExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsRegexLiteralExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13491,6 +13606,7 @@ impl AstNode for JsRestParameter {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsRestParameter {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13524,6 +13640,7 @@ impl AstNode for JsReturnStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsReturnStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13557,6 +13674,7 @@ impl AstNode for JsScript {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsScript {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13588,6 +13706,7 @@ impl AstNode for JsSequenceExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsSequenceExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13618,6 +13737,7 @@ impl AstNode for JsSetterClassMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsSetterClassMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13655,6 +13775,7 @@ impl AstNode for JsSetterObjectMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsSetterObjectMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13691,6 +13812,7 @@ impl AstNode for JsShorthandNamedImportSpecifier {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsShorthandNamedImportSpecifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13720,6 +13842,7 @@ impl AstNode for JsShorthandPropertyObjectMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsShorthandPropertyObjectMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13745,6 +13868,7 @@ impl AstNode for JsSpread {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsSpread {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13774,6 +13898,7 @@ impl AstNode for JsStaticInitializationBlockClassMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsStaticInitializationBlockClassMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13811,6 +13936,7 @@ impl AstNode for JsStaticMemberAssignment {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsStaticMemberAssignment {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13838,6 +13964,7 @@ impl AstNode for JsStaticMemberExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsStaticMemberExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13868,6 +13995,7 @@ impl AstNode for JsStaticModifier {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsStaticModifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13896,6 +14024,7 @@ impl AstNode for JsStringLiteralExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsStringLiteralExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13924,6 +14053,7 @@ impl AstNode for JsSuperExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsSuperExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -13952,6 +14082,7 @@ impl AstNode for JsSwitchStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsSwitchStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14001,6 +14132,7 @@ impl AstNode for JsTemplate {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsTemplate {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14039,6 +14171,7 @@ impl AstNode for JsTemplateChunkElement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsTemplateChunkElement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14067,6 +14200,7 @@ impl AstNode for JsTemplateElement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsTemplateElement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14100,6 +14234,7 @@ impl AstNode for JsThisExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsThisExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14125,6 +14260,7 @@ impl AstNode for JsThrowStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsThrowStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14158,6 +14294,7 @@ impl AstNode for JsTryFinallyStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsTryFinallyStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14192,6 +14329,7 @@ impl AstNode for JsTryStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsTryStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14222,6 +14360,7 @@ impl AstNode for JsUnaryExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsUnaryExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14251,6 +14390,7 @@ impl AstNode for JsVariableDeclaration {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsVariableDeclaration {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14277,6 +14417,7 @@ impl AstNode for JsVariableDeclarationClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsVariableDeclarationClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14309,6 +14450,7 @@ impl AstNode for JsVariableDeclarator {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsVariableDeclarator {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14342,6 +14484,7 @@ impl AstNode for JsVariableStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsVariableStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14374,6 +14517,7 @@ impl AstNode for JsWhileStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsWhileStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14412,6 +14556,7 @@ impl AstNode for JsWithStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsWithStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14447,6 +14592,7 @@ impl AstNode for JsYieldArgument {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsYieldArgument {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14476,6 +14622,7 @@ impl AstNode for JsYieldExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsYieldExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14505,6 +14652,7 @@ impl AstNode for JsxAttribute {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxAttribute {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14534,6 +14682,7 @@ impl AstNode for JsxAttributeInitializerClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxAttributeInitializerClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14560,6 +14709,7 @@ impl AstNode for JsxClosingElement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxClosingElement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14597,6 +14747,7 @@ impl AstNode for JsxClosingFragment {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxClosingFragment {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14633,6 +14784,7 @@ impl AstNode for JsxElement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxElement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14666,6 +14818,7 @@ impl AstNode for JsxExpressionAttributeValue {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxExpressionAttributeValue {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14699,6 +14852,7 @@ impl AstNode for JsxExpressionChild {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxExpressionChild {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14735,6 +14889,7 @@ impl AstNode for JsxFragment {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxFragment {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14768,6 +14923,7 @@ impl AstNode for JsxMemberName {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxMemberName {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14795,6 +14951,7 @@ impl AstNode for JsxName {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxName {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14823,6 +14980,7 @@ impl AstNode for JsxNamespaceName {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxNamespaceName {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14853,6 +15011,7 @@ impl AstNode for JsxOpeningElement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxOpeningElement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14891,6 +15050,7 @@ impl AstNode for JsxOpeningFragment {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxOpeningFragment {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14923,6 +15083,7 @@ impl AstNode for JsxReferenceIdentifier {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxReferenceIdentifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14951,6 +15112,7 @@ impl AstNode for JsxSelfClosingElement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxSelfClosingElement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -14993,6 +15155,7 @@ impl AstNode for JsxSpreadAttribute {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxSpreadAttribute {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15030,6 +15193,7 @@ impl AstNode for JsxSpreadChild {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxSpreadChild {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15067,6 +15231,7 @@ impl AstNode for JsxString {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxString {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15095,6 +15260,7 @@ impl AstNode for JsxTagExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxTagExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15120,6 +15286,7 @@ impl AstNode for JsxText {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsxText {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15148,6 +15315,7 @@ impl AstNode for NewTarget {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for NewTarget {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15178,6 +15346,7 @@ impl AstNode for TsAbstractModifier {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsAbstractModifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15206,6 +15375,7 @@ impl AstNode for TsAccessibilityModifier {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsAccessibilityModifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15234,6 +15404,7 @@ impl AstNode for TsAnyType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsAnyType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15259,6 +15430,7 @@ impl AstNode for TsArrayType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsArrayType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15295,6 +15467,7 @@ impl AstNode for TsAsAssignment {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsAsAssignment {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15322,6 +15495,7 @@ impl AstNode for TsAsExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsAsExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15349,6 +15523,7 @@ impl AstNode for TsAssertsCondition {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsAssertsCondition {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15375,6 +15550,7 @@ impl AstNode for TsAssertsReturnType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsAssertsReturnType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15411,6 +15587,7 @@ impl AstNode for TsBigIntLiteralType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsBigIntLiteralType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15443,6 +15620,7 @@ impl AstNode for TsBigintType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsBigintType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15471,6 +15649,7 @@ impl AstNode for TsBooleanLiteralType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsBooleanLiteralType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15496,6 +15675,7 @@ impl AstNode for TsBooleanType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsBooleanType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15524,6 +15704,7 @@ impl AstNode for TsCallSignatureTypeMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsCallSignatureTypeMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15561,6 +15742,7 @@ impl AstNode for TsConditionalType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsConditionalType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15604,6 +15786,7 @@ impl AstNode for TsConstructSignatureTypeMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsConstructSignatureTypeMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15642,6 +15825,7 @@ impl AstNode for TsConstructorSignatureClassMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsConstructorSignatureClassMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15673,6 +15857,7 @@ impl AstNode for TsConstructorType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsConstructorType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15715,6 +15900,7 @@ impl AstNode for TsDeclareFunctionDeclaration {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsDeclareFunctionDeclaration {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15761,6 +15947,7 @@ impl AstNode for TsDeclareModifier {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsDeclareModifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15789,6 +15976,7 @@ impl AstNode for TsDeclareStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsDeclareStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15821,6 +16009,7 @@ impl AstNode for TsDefaultTypeClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsDefaultTypeClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15847,6 +16036,7 @@ impl AstNode for TsDefinitePropertyAnnotation {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsDefinitePropertyAnnotation {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15876,6 +16066,7 @@ impl AstNode for TsDefiniteVariableAnnotation {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsDefiniteVariableAnnotation {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15905,6 +16096,7 @@ impl AstNode for TsEmptyExternalModuleDeclarationBody {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsEmptyExternalModuleDeclarationBody {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15933,6 +16125,7 @@ impl AstNode for TsEnumDeclaration {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsEnumDeclaration {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -15972,6 +16165,7 @@ impl AstNode for TsEnumMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsEnumMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16001,6 +16195,7 @@ impl AstNode for TsExportAsNamespaceClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsExportAsNamespaceClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16035,6 +16230,7 @@ impl AstNode for TsExportAssignmentClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsExportAssignmentClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16065,6 +16261,7 @@ impl AstNode for TsExportDeclareClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsExportDeclareClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16097,6 +16294,7 @@ impl AstNode for TsExtendsClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsExtendsClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16126,6 +16324,7 @@ impl AstNode for TsExternalModuleDeclaration {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsExternalModuleDeclaration {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16156,6 +16355,7 @@ impl AstNode for TsExternalModuleReference {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsExternalModuleReference {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16193,6 +16393,7 @@ impl AstNode for TsFunctionType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsFunctionType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16230,6 +16431,7 @@ impl AstNode for TsGetterSignatureClassMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsGetterSignatureClassMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16273,6 +16475,7 @@ impl AstNode for TsGetterSignatureTypeMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsGetterSignatureTypeMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16315,6 +16518,7 @@ impl AstNode for TsGlobalDeclaration {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsGlobalDeclaration {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16344,6 +16548,7 @@ impl AstNode for TsIdentifierBinding {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsIdentifierBinding {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16369,6 +16574,7 @@ impl AstNode for TsImplementsClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsImplementsClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16398,6 +16604,7 @@ impl AstNode for TsImportEqualsDeclaration {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsImportEqualsDeclaration {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16440,6 +16647,7 @@ impl AstNode for TsImportType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsImportType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16492,6 +16700,7 @@ impl AstNode for TsImportTypeQualifier {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsImportTypeQualifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16518,6 +16727,7 @@ impl AstNode for TsIndexSignatureClassMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsIndexSignatureClassMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16560,6 +16770,7 @@ impl AstNode for TsIndexSignatureParameter {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsIndexSignatureParameter {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16589,6 +16800,7 @@ impl AstNode for TsIndexSignatureTypeMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsIndexSignatureTypeMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16634,6 +16846,7 @@ impl AstNode for TsIndexedAccessType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsIndexedAccessType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16671,6 +16884,7 @@ impl AstNode for TsInferType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsInferType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16703,6 +16917,7 @@ impl AstNode for TsInterfaceDeclaration {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsInterfaceDeclaration {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16749,6 +16964,7 @@ impl AstNode for TsIntersectionType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsIntersectionType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16778,6 +16994,7 @@ impl AstNode for TsMappedType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsMappedType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16844,6 +17061,7 @@ impl AstNode for TsMappedTypeAsClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsMappedTypeAsClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16870,6 +17088,7 @@ impl AstNode for TsMappedTypeOptionalModifierClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsMappedTypeOptionalModifierClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16902,6 +17121,7 @@ impl AstNode for TsMappedTypeReadonlyModifierClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsMappedTypeReadonlyModifierClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16934,6 +17154,7 @@ impl AstNode for TsMethodSignatureClassMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsMethodSignatureClassMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -16981,6 +17202,7 @@ impl AstNode for TsMethodSignatureTypeMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsMethodSignatureTypeMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17023,6 +17245,7 @@ impl AstNode for TsModuleBlock {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsModuleBlock {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17056,6 +17279,7 @@ impl AstNode for TsModuleDeclaration {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsModuleDeclaration {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17086,6 +17310,7 @@ impl AstNode for TsNameWithTypeArguments {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsNameWithTypeArguments {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17115,6 +17340,7 @@ impl AstNode for TsNamedTupleTypeElement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsNamedTupleTypeElement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17153,6 +17379,7 @@ impl AstNode for TsNeverType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsNeverType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17181,6 +17408,7 @@ impl AstNode for TsNonNullAssertionAssignment {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsNonNullAssertionAssignment {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17207,6 +17435,7 @@ impl AstNode for TsNonNullAssertionExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsNonNullAssertionExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17233,6 +17462,7 @@ impl AstNode for TsNonPrimitiveType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsNonPrimitiveType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17261,6 +17491,7 @@ impl AstNode for TsNullLiteralType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsNullLiteralType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17289,6 +17520,7 @@ impl AstNode for TsNumberLiteralType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsNumberLiteralType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17321,6 +17553,7 @@ impl AstNode for TsNumberType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsNumberType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17349,6 +17582,7 @@ impl AstNode for TsObjectType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsObjectType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17382,6 +17616,7 @@ impl AstNode for TsOptionalPropertyAnnotation {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsOptionalPropertyAnnotation {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17414,6 +17649,7 @@ impl AstNode for TsOptionalTupleTypeElement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsOptionalTupleTypeElement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17443,6 +17679,7 @@ impl AstNode for TsOverrideModifier {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsOverrideModifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17471,6 +17708,7 @@ impl AstNode for TsParenthesizedType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsParenthesizedType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17504,6 +17742,7 @@ impl AstNode for TsPredicateReturnType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsPredicateReturnType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17534,6 +17773,7 @@ impl AstNode for TsPropertyParameter {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsPropertyParameter {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17563,6 +17803,7 @@ impl AstNode for TsPropertySignatureClassMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsPropertySignatureClassMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17597,6 +17838,7 @@ impl AstNode for TsPropertySignatureTypeMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsPropertySignatureTypeMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17638,6 +17880,7 @@ impl AstNode for TsQualifiedModuleName {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsQualifiedModuleName {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17665,6 +17908,7 @@ impl AstNode for TsQualifiedName {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsQualifiedName {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17692,6 +17936,7 @@ impl AstNode for TsReadonlyModifier {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsReadonlyModifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17720,6 +17965,7 @@ impl AstNode for TsReferenceType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsReferenceType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17749,6 +17995,7 @@ impl AstNode for TsRestTupleTypeElement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsRestTupleTypeElement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17778,6 +18025,7 @@ impl AstNode for TsReturnTypeAnnotation {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsReturnTypeAnnotation {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17807,6 +18055,7 @@ impl AstNode for TsSetterSignatureClassMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsSetterSignatureClassMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17847,6 +18096,7 @@ impl AstNode for TsSetterSignatureTypeMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsSetterSignatureTypeMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17886,6 +18136,7 @@ impl AstNode for TsStringLiteralType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsStringLiteralType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17914,6 +18165,7 @@ impl AstNode for TsStringType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsStringType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17942,6 +18194,7 @@ impl AstNode for TsSymbolType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsSymbolType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17970,6 +18223,7 @@ impl AstNode for TsTemplateChunkElement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsTemplateChunkElement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -17998,6 +18252,7 @@ impl AstNode for TsTemplateElement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsTemplateElement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18031,6 +18286,7 @@ impl AstNode for TsTemplateLiteralType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsTemplateLiteralType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18064,6 +18320,7 @@ impl AstNode for TsThisParameter {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsThisParameter {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18093,6 +18350,7 @@ impl AstNode for TsThisType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsThisType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18118,6 +18376,7 @@ impl AstNode for TsTupleType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsTupleType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18151,6 +18410,7 @@ impl AstNode for TsTypeAliasDeclaration {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsTypeAliasDeclaration {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18190,6 +18450,7 @@ impl AstNode for TsTypeAnnotation {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsTypeAnnotation {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18219,6 +18480,7 @@ impl AstNode for TsTypeArguments {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsTypeArguments {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18252,6 +18514,7 @@ impl AstNode for TsTypeAssertionAssignment {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsTypeAssertionAssignment {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18286,6 +18549,7 @@ impl AstNode for TsTypeAssertionExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsTypeAssertionExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18320,6 +18584,7 @@ impl AstNode for TsTypeConstraintClause {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsTypeConstraintClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18349,6 +18614,7 @@ impl AstNode for TsTypeOperatorType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsTypeOperatorType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18378,6 +18644,7 @@ impl AstNode for TsTypeParameter {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsTypeParameter {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18408,6 +18675,7 @@ impl AstNode for TsTypeParameterName {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsTypeParameterName {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18436,6 +18704,7 @@ impl AstNode for TsTypeParameters {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsTypeParameters {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18469,6 +18738,7 @@ impl AstNode for TsTypeofType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsTypeofType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18501,6 +18771,7 @@ impl AstNode for TsUndefinedType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsUndefinedType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18529,6 +18800,7 @@ impl AstNode for TsUnionType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsUnionType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18558,6 +18830,7 @@ impl AstNode for TsUnknownType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsUnknownType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18586,6 +18859,7 @@ impl AstNode for TsVoidType {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for TsVoidType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18660,6 +18934,16 @@ impl AstNode for JsAnyArrayAssignmentPatternElement {
             JsAnyArrayAssignmentPatternElement::JsArrayHole(it) => &it.syntax,
             JsAnyArrayAssignmentPatternElement::JsAssignmentWithDefault(it) => &it.syntax,
             JsAnyArrayAssignmentPatternElement::JsAnyAssignmentPattern(it) => it.syntax(),
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyArrayAssignmentPatternElement::JsArrayAssignmentPatternRestElement(it) => {
+                it.syntax
+            }
+            JsAnyArrayAssignmentPatternElement::JsArrayHole(it) => it.syntax,
+            JsAnyArrayAssignmentPatternElement::JsAssignmentWithDefault(it) => it.syntax,
+            JsAnyArrayAssignmentPatternElement::JsAnyAssignmentPattern(it) => it.into_syntax(),
         }
     }
 }
@@ -18755,6 +19039,14 @@ impl AstNode for JsAnyArrayBindingPatternElement {
             JsAnyArrayBindingPatternElement::JsAnyBindingPattern(it) => it.syntax(),
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyArrayBindingPatternElement::JsArrayBindingPatternRestElement(it) => it.syntax,
+            JsAnyArrayBindingPatternElement::JsArrayHole(it) => it.syntax,
+            JsAnyArrayBindingPatternElement::JsBindingPatternWithDefault(it) => it.syntax,
+            JsAnyArrayBindingPatternElement::JsAnyBindingPattern(it) => it.into_syntax(),
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyArrayBindingPatternElement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18821,6 +19113,13 @@ impl AstNode for JsAnyArrayElement {
             JsAnyArrayElement::JsAnyExpression(it) => it.syntax(),
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyArrayElement::JsArrayHole(it) => it.syntax,
+            JsAnyArrayElement::JsSpread(it) => it.syntax,
+            JsAnyArrayElement::JsAnyExpression(it) => it.into_syntax(),
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyArrayElement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -18876,6 +19175,12 @@ impl AstNode for JsAnyArrowFunctionParameters {
         match self {
             JsAnyArrowFunctionParameters::JsParameters(it) => &it.syntax,
             JsAnyArrowFunctionParameters::JsAnyBinding(it) => it.syntax(),
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyArrowFunctionParameters::JsParameters(it) => it.syntax,
+            JsAnyArrowFunctionParameters::JsAnyBinding(it) => it.into_syntax(),
         }
     }
 }
@@ -18996,6 +19301,18 @@ impl AstNode for JsAnyAssignment {
             JsAnyAssignment::TsTypeAssertionAssignment(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyAssignment::JsComputedMemberAssignment(it) => it.syntax,
+            JsAnyAssignment::JsIdentifierAssignment(it) => it.syntax,
+            JsAnyAssignment::JsParenthesizedAssignment(it) => it.syntax,
+            JsAnyAssignment::JsStaticMemberAssignment(it) => it.syntax,
+            JsAnyAssignment::JsUnknownAssignment(it) => it.syntax,
+            JsAnyAssignment::TsAsAssignment(it) => it.syntax,
+            JsAnyAssignment::TsNonNullAssertionAssignment(it) => it.syntax,
+            JsAnyAssignment::TsTypeAssertionAssignment(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyAssignment {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -19078,6 +19395,13 @@ impl AstNode for JsAnyAssignmentPattern {
             JsAnyAssignmentPattern::JsAnyAssignment(it) => it.syntax(),
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyAssignmentPattern::JsArrayAssignmentPattern(it) => it.syntax,
+            JsAnyAssignmentPattern::JsObjectAssignmentPattern(it) => it.syntax,
+            JsAnyAssignmentPattern::JsAnyAssignment(it) => it.into_syntax(),
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyAssignmentPattern {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -19128,6 +19452,12 @@ impl AstNode for JsAnyBinding {
         match self {
             JsAnyBinding::JsIdentifierBinding(it) => &it.syntax,
             JsAnyBinding::JsUnknownBinding(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyBinding::JsIdentifierBinding(it) => it.syntax,
+            JsAnyBinding::JsUnknownBinding(it) => it.syntax,
         }
     }
 }
@@ -19196,6 +19526,13 @@ impl AstNode for JsAnyBindingPattern {
             JsAnyBindingPattern::JsAnyBinding(it) => it.syntax(),
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyBindingPattern::JsArrayBindingPattern(it) => it.syntax,
+            JsAnyBindingPattern::JsObjectBindingPattern(it) => it.syntax,
+            JsAnyBindingPattern::JsAnyBinding(it) => it.into_syntax(),
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyBindingPattern {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -19249,6 +19586,12 @@ impl AstNode for JsAnyCallArgument {
         match self {
             JsAnyCallArgument::JsSpread(it) => &it.syntax,
             JsAnyCallArgument::JsAnyExpression(it) => it.syntax(),
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyCallArgument::JsSpread(it) => it.syntax,
+            JsAnyCallArgument::JsAnyExpression(it) => it.into_syntax(),
         }
     }
 }
@@ -19311,6 +19654,13 @@ impl AstNode for JsAnyClass {
             JsAnyClass::JsClassDeclaration(it) => &it.syntax,
             JsAnyClass::JsClassExportDefaultDeclaration(it) => &it.syntax,
             JsAnyClass::JsClassExpression(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyClass::JsClassDeclaration(it) => it.syntax,
+            JsAnyClass::JsClassExportDefaultDeclaration(it) => it.syntax,
+            JsAnyClass::JsClassExpression(it) => it.syntax,
         }
     }
 }
@@ -19505,6 +19855,24 @@ impl AstNode for JsAnyClassMember {
             JsAnyClassMember::TsSetterSignatureClassMember(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyClassMember::JsConstructorClassMember(it) => it.syntax,
+            JsAnyClassMember::JsEmptyClassMember(it) => it.syntax,
+            JsAnyClassMember::JsGetterClassMember(it) => it.syntax,
+            JsAnyClassMember::JsMethodClassMember(it) => it.syntax,
+            JsAnyClassMember::JsPropertyClassMember(it) => it.syntax,
+            JsAnyClassMember::JsSetterClassMember(it) => it.syntax,
+            JsAnyClassMember::JsStaticInitializationBlockClassMember(it) => it.syntax,
+            JsAnyClassMember::JsUnknownMember(it) => it.syntax,
+            JsAnyClassMember::TsConstructorSignatureClassMember(it) => it.syntax,
+            JsAnyClassMember::TsGetterSignatureClassMember(it) => it.syntax,
+            JsAnyClassMember::TsIndexSignatureClassMember(it) => it.syntax,
+            JsAnyClassMember::TsMethodSignatureClassMember(it) => it.syntax,
+            JsAnyClassMember::TsPropertySignatureClassMember(it) => it.syntax,
+            JsAnyClassMember::TsSetterSignatureClassMember(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyClassMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -19599,6 +19967,13 @@ impl AstNode for JsAnyClassMemberName {
             JsAnyClassMemberName::JsPrivateClassMemberName(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyClassMemberName::JsComputedMemberName(it) => it.syntax,
+            JsAnyClassMemberName::JsLiteralMemberName(it) => it.syntax,
+            JsAnyClassMemberName::JsPrivateClassMemberName(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyClassMemberName {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -19667,6 +20042,13 @@ impl AstNode for JsAnyConstructorParameter {
             JsAnyConstructorParameter::JsRestParameter(it) => &it.syntax,
             JsAnyConstructorParameter::TsPropertyParameter(it) => &it.syntax,
             JsAnyConstructorParameter::JsAnyFormalParameter(it) => it.syntax(),
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyConstructorParameter::JsRestParameter(it) => it.syntax,
+            JsAnyConstructorParameter::TsPropertyParameter(it) => it.syntax,
+            JsAnyConstructorParameter::JsAnyFormalParameter(it) => it.into_syntax(),
         }
     }
 }
@@ -19823,6 +20205,21 @@ impl AstNode for JsAnyDeclaration {
             JsAnyDeclaration::TsInterfaceDeclaration(it) => &it.syntax,
             JsAnyDeclaration::TsModuleDeclaration(it) => &it.syntax,
             JsAnyDeclaration::TsTypeAliasDeclaration(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyDeclaration::JsClassDeclaration(it) => it.syntax,
+            JsAnyDeclaration::JsFunctionDeclaration(it) => it.syntax,
+            JsAnyDeclaration::JsVariableDeclaration(it) => it.syntax,
+            JsAnyDeclaration::TsDeclareFunctionDeclaration(it) => it.syntax,
+            JsAnyDeclaration::TsEnumDeclaration(it) => it.syntax,
+            JsAnyDeclaration::TsExternalModuleDeclaration(it) => it.syntax,
+            JsAnyDeclaration::TsGlobalDeclaration(it) => it.syntax,
+            JsAnyDeclaration::TsImportEqualsDeclaration(it) => it.syntax,
+            JsAnyDeclaration::TsInterfaceDeclaration(it) => it.syntax,
+            JsAnyDeclaration::TsModuleDeclaration(it) => it.syntax,
+            JsAnyDeclaration::TsTypeAliasDeclaration(it) => it.syntax,
         }
     }
 }
@@ -20001,6 +20398,21 @@ impl AstNode for JsAnyDeclarationClause {
             JsAnyDeclarationClause::TsTypeAliasDeclaration(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyDeclarationClause::JsClassDeclaration(it) => it.syntax,
+            JsAnyDeclarationClause::JsFunctionDeclaration(it) => it.syntax,
+            JsAnyDeclarationClause::JsVariableDeclarationClause(it) => it.syntax,
+            JsAnyDeclarationClause::TsDeclareFunctionDeclaration(it) => it.syntax,
+            JsAnyDeclarationClause::TsEnumDeclaration(it) => it.syntax,
+            JsAnyDeclarationClause::TsExternalModuleDeclaration(it) => it.syntax,
+            JsAnyDeclarationClause::TsGlobalDeclaration(it) => it.syntax,
+            JsAnyDeclarationClause::TsImportEqualsDeclaration(it) => it.syntax,
+            JsAnyDeclarationClause::TsInterfaceDeclaration(it) => it.syntax,
+            JsAnyDeclarationClause::TsModuleDeclaration(it) => it.syntax,
+            JsAnyDeclarationClause::TsTypeAliasDeclaration(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyDeclarationClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -20152,6 +20564,19 @@ impl AstNode for JsAnyExportClause {
             JsAnyExportClause::JsAnyDeclarationClause(it) => it.syntax(),
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyExportClause::JsExportDefaultDeclarationClause(it) => it.syntax,
+            JsAnyExportClause::JsExportDefaultExpressionClause(it) => it.syntax,
+            JsAnyExportClause::JsExportFromClause(it) => it.syntax,
+            JsAnyExportClause::JsExportNamedClause(it) => it.syntax,
+            JsAnyExportClause::JsExportNamedFromClause(it) => it.syntax,
+            JsAnyExportClause::TsExportAsNamespaceClause(it) => it.syntax,
+            JsAnyExportClause::TsExportAssignmentClause(it) => it.syntax,
+            JsAnyExportClause::TsExportDeclareClause(it) => it.syntax,
+            JsAnyExportClause::JsAnyDeclarationClause(it) => it.into_syntax(),
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyExportClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -20254,6 +20679,14 @@ impl AstNode for JsAnyExportDefaultDeclaration {
             JsAnyExportDefaultDeclaration::TsInterfaceDeclaration(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyExportDefaultDeclaration::JsClassExportDefaultDeclaration(it) => it.syntax,
+            JsAnyExportDefaultDeclaration::JsFunctionExportDefaultDeclaration(it) => it.syntax,
+            JsAnyExportDefaultDeclaration::TsDeclareFunctionDeclaration(it) => it.syntax,
+            JsAnyExportDefaultDeclaration::TsInterfaceDeclaration(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyExportDefaultDeclaration {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -20325,6 +20758,12 @@ impl AstNode for JsAnyExportNamedSpecifier {
         match self {
             JsAnyExportNamedSpecifier::JsExportNamedShorthandSpecifier(it) => &it.syntax,
             JsAnyExportNamedSpecifier::JsExportNamedSpecifier(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyExportNamedSpecifier::JsExportNamedShorthandSpecifier(it) => it.syntax,
+            JsAnyExportNamedSpecifier::JsExportNamedSpecifier(it) => it.syntax,
         }
     }
 }
@@ -20660,6 +21099,45 @@ impl AstNode for JsAnyExpression {
             JsAnyExpression::JsAnyLiteralExpression(it) => it.syntax(),
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyExpression::ImportMeta(it) => it.syntax,
+            JsAnyExpression::JsArrayExpression(it) => it.syntax,
+            JsAnyExpression::JsArrowFunctionExpression(it) => it.syntax,
+            JsAnyExpression::JsAssignmentExpression(it) => it.syntax,
+            JsAnyExpression::JsAwaitExpression(it) => it.syntax,
+            JsAnyExpression::JsBinaryExpression(it) => it.syntax,
+            JsAnyExpression::JsCallExpression(it) => it.syntax,
+            JsAnyExpression::JsClassExpression(it) => it.syntax,
+            JsAnyExpression::JsComputedMemberExpression(it) => it.syntax,
+            JsAnyExpression::JsConditionalExpression(it) => it.syntax,
+            JsAnyExpression::JsFunctionExpression(it) => it.syntax,
+            JsAnyExpression::JsIdentifierExpression(it) => it.syntax,
+            JsAnyExpression::JsImportCallExpression(it) => it.syntax,
+            JsAnyExpression::JsInExpression(it) => it.syntax,
+            JsAnyExpression::JsInstanceofExpression(it) => it.syntax,
+            JsAnyExpression::JsLogicalExpression(it) => it.syntax,
+            JsAnyExpression::JsNewExpression(it) => it.syntax,
+            JsAnyExpression::JsObjectExpression(it) => it.syntax,
+            JsAnyExpression::JsParenthesizedExpression(it) => it.syntax,
+            JsAnyExpression::JsPostUpdateExpression(it) => it.syntax,
+            JsAnyExpression::JsPreUpdateExpression(it) => it.syntax,
+            JsAnyExpression::JsSequenceExpression(it) => it.syntax,
+            JsAnyExpression::JsStaticMemberExpression(it) => it.syntax,
+            JsAnyExpression::JsSuperExpression(it) => it.syntax,
+            JsAnyExpression::JsTemplate(it) => it.syntax,
+            JsAnyExpression::JsThisExpression(it) => it.syntax,
+            JsAnyExpression::JsUnaryExpression(it) => it.syntax,
+            JsAnyExpression::JsUnknownExpression(it) => it.syntax,
+            JsAnyExpression::JsYieldExpression(it) => it.syntax,
+            JsAnyExpression::JsxTagExpression(it) => it.syntax,
+            JsAnyExpression::NewTarget(it) => it.syntax,
+            JsAnyExpression::TsAsExpression(it) => it.syntax,
+            JsAnyExpression::TsNonNullAssertionExpression(it) => it.syntax,
+            JsAnyExpression::TsTypeAssertionExpression(it) => it.syntax,
+            JsAnyExpression::JsAnyLiteralExpression(it) => it.into_syntax(),
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -20787,6 +21265,12 @@ impl AstNode for JsAnyForInOrOfInitializer {
             JsAnyForInOrOfInitializer::JsAnyAssignmentPattern(it) => it.syntax(),
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyForInOrOfInitializer::JsForVariableDeclaration(it) => it.syntax,
+            JsAnyForInOrOfInitializer::JsAnyAssignmentPattern(it) => it.into_syntax(),
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyForInOrOfInitializer {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -20844,6 +21328,12 @@ impl AstNode for JsAnyForInitializer {
             JsAnyForInitializer::JsAnyExpression(it) => it.syntax(),
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyForInitializer::JsVariableDeclaration(it) => it.syntax,
+            JsAnyForInitializer::JsAnyExpression(it) => it.into_syntax(),
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyForInitializer {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -20898,6 +21388,12 @@ impl AstNode for JsAnyFormalParameter {
         match self {
             JsAnyFormalParameter::JsFormalParameter(it) => &it.syntax,
             JsAnyFormalParameter::JsUnknownParameter(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyFormalParameter::JsFormalParameter(it) => it.syntax,
+            JsAnyFormalParameter::JsUnknownParameter(it) => it.syntax,
         }
     }
 }
@@ -20982,6 +21478,14 @@ impl AstNode for JsAnyFunction {
             JsAnyFunction::JsFunctionExpression(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyFunction::JsArrowFunctionExpression(it) => it.syntax,
+            JsAnyFunction::JsFunctionDeclaration(it) => it.syntax,
+            JsAnyFunction::JsFunctionExportDefaultDeclaration(it) => it.syntax,
+            JsAnyFunction::JsFunctionExpression(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyFunction {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -21037,6 +21541,12 @@ impl AstNode for JsAnyFunctionBody {
         match self {
             JsAnyFunctionBody::JsFunctionBody(it) => &it.syntax,
             JsAnyFunctionBody::JsAnyExpression(it) => it.syntax(),
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyFunctionBody::JsFunctionBody(it) => it.syntax,
+            JsAnyFunctionBody::JsAnyExpression(it) => it.into_syntax(),
         }
     }
 }
@@ -21098,6 +21608,12 @@ impl AstNode for JsAnyImportAssertionEntry {
         match self {
             JsAnyImportAssertionEntry::JsImportAssertionEntry(it) => &it.syntax,
             JsAnyImportAssertionEntry::JsUnknownImportAssertionEntry(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyImportAssertionEntry::JsImportAssertionEntry(it) => it.syntax,
+            JsAnyImportAssertionEntry::JsUnknownImportAssertionEntry(it) => it.syntax,
         }
     }
 }
@@ -21182,6 +21698,14 @@ impl AstNode for JsAnyImportClause {
             JsAnyImportClause::JsImportNamespaceClause(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyImportClause::JsImportBareClause(it) => it.syntax,
+            JsAnyImportClause::JsImportDefaultClause(it) => it.syntax,
+            JsAnyImportClause::JsImportNamedClause(it) => it.syntax,
+            JsAnyImportClause::JsImportNamespaceClause(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyImportClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -21237,6 +21761,12 @@ impl AstNode for JsAnyInProperty {
         match self {
             JsAnyInProperty::JsPrivateName(it) => &it.syntax,
             JsAnyInProperty::JsAnyExpression(it) => it.syntax(),
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyInProperty::JsPrivateName(it) => it.syntax,
+            JsAnyInProperty::JsAnyExpression(it) => it.into_syntax(),
         }
     }
 }
@@ -21349,6 +21879,16 @@ impl AstNode for JsAnyLiteralExpression {
             JsAnyLiteralExpression::JsStringLiteralExpression(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyLiteralExpression::JsBigIntLiteralExpression(it) => it.syntax,
+            JsAnyLiteralExpression::JsBooleanLiteralExpression(it) => it.syntax,
+            JsAnyLiteralExpression::JsNullLiteralExpression(it) => it.syntax,
+            JsAnyLiteralExpression::JsNumberLiteralExpression(it) => it.syntax,
+            JsAnyLiteralExpression::JsRegexLiteralExpression(it) => it.syntax,
+            JsAnyLiteralExpression::JsStringLiteralExpression(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyLiteralExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -21425,6 +21965,13 @@ impl AstNode for JsAnyMethodModifier {
             JsAnyMethodModifier::TsOverrideModifier(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyMethodModifier::JsStaticModifier(it) => it.syntax,
+            JsAnyMethodModifier::TsAccessibilityModifier(it) => it.syntax,
+            JsAnyMethodModifier::TsOverrideModifier(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyMethodModifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -21485,6 +22032,13 @@ impl AstNode for JsAnyModuleItem {
             JsAnyModuleItem::JsAnyStatement(it) => it.syntax(),
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyModuleItem::JsExport(it) => it.syntax,
+            JsAnyModuleItem::JsImport(it) => it.syntax,
+            JsAnyModuleItem::JsAnyStatement(it) => it.into_syntax(),
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyModuleItem {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -21531,6 +22085,12 @@ impl AstNode for JsAnyName {
         match self {
             JsAnyName::JsName(it) => &it.syntax,
             JsAnyName::JsPrivateName(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyName::JsName(it) => it.syntax,
+            JsAnyName::JsPrivateName(it) => it.syntax,
         }
     }
 }
@@ -21590,6 +22150,12 @@ impl AstNode for JsAnyNamedImport {
         match self {
             JsAnyNamedImport::JsNamedImportSpecifiers(it) => &it.syntax,
             JsAnyNamedImport::JsNamespaceImportSpecifier(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyNamedImport::JsNamedImportSpecifiers(it) => it.syntax,
+            JsAnyNamedImport::JsNamespaceImportSpecifier(it) => it.syntax,
         }
     }
 }
@@ -21664,6 +22230,13 @@ impl AstNode for JsAnyNamedImportSpecifier {
             JsAnyNamedImportSpecifier::JsNamedImportSpecifier(it) => &it.syntax,
             JsAnyNamedImportSpecifier::JsShorthandNamedImportSpecifier(it) => &it.syntax,
             JsAnyNamedImportSpecifier::JsUnknownNamedImportSpecifier(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyNamedImportSpecifier::JsNamedImportSpecifier(it) => it.syntax,
+            JsAnyNamedImportSpecifier::JsShorthandNamedImportSpecifier(it) => it.syntax,
+            JsAnyNamedImportSpecifier::JsUnknownNamedImportSpecifier(it) => it.syntax,
         }
     }
 }
@@ -21762,6 +22335,16 @@ impl AstNode for JsAnyObjectAssignmentPatternMember {
                 &it.syntax
             }
             JsAnyObjectAssignmentPatternMember::JsUnknownAssignment(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyObjectAssignmentPatternMember::JsObjectAssignmentPatternProperty(it) => it.syntax,
+            JsAnyObjectAssignmentPatternMember::JsObjectAssignmentPatternRest(it) => it.syntax,
+            JsAnyObjectAssignmentPatternMember::JsObjectAssignmentPatternShorthandProperty(it) => {
+                it.syntax
+            }
+            JsAnyObjectAssignmentPatternMember::JsUnknownAssignment(it) => it.syntax,
         }
     }
 }
@@ -21874,6 +22457,17 @@ impl AstNode for JsAnyObjectBindingPatternMember {
                 &it.syntax
             }
             JsAnyObjectBindingPatternMember::JsUnknownBinding(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyObjectBindingPatternMember::JsIdentifierBinding(it) => it.syntax,
+            JsAnyObjectBindingPatternMember::JsObjectBindingPatternProperty(it) => it.syntax,
+            JsAnyObjectBindingPatternMember::JsObjectBindingPatternRest(it) => it.syntax,
+            JsAnyObjectBindingPatternMember::JsObjectBindingPatternShorthandProperty(it) => {
+                it.syntax
+            }
+            JsAnyObjectBindingPatternMember::JsUnknownBinding(it) => it.syntax,
         }
     }
 }
@@ -21994,6 +22588,17 @@ impl AstNode for JsAnyObjectMember {
             JsAnyObjectMember::JsUnknownMember(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyObjectMember::JsGetterObjectMember(it) => it.syntax,
+            JsAnyObjectMember::JsMethodObjectMember(it) => it.syntax,
+            JsAnyObjectMember::JsPropertyObjectMember(it) => it.syntax,
+            JsAnyObjectMember::JsSetterObjectMember(it) => it.syntax,
+            JsAnyObjectMember::JsShorthandPropertyObjectMember(it) => it.syntax,
+            JsAnyObjectMember::JsSpread(it) => it.syntax,
+            JsAnyObjectMember::JsUnknownMember(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyObjectMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -22060,6 +22665,12 @@ impl AstNode for JsAnyObjectMemberName {
             JsAnyObjectMemberName::JsLiteralMemberName(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyObjectMemberName::JsComputedMemberName(it) => it.syntax,
+            JsAnyObjectMemberName::JsLiteralMemberName(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyObjectMemberName {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -22118,6 +22729,13 @@ impl AstNode for JsAnyParameter {
             JsAnyParameter::JsRestParameter(it) => &it.syntax,
             JsAnyParameter::TsThisParameter(it) => &it.syntax,
             JsAnyParameter::JsAnyFormalParameter(it) => it.syntax(),
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyParameter::JsRestParameter(it) => it.syntax,
+            JsAnyParameter::TsThisParameter(it) => it.syntax,
+            JsAnyParameter::JsAnyFormalParameter(it) => it.into_syntax(),
         }
     }
 }
@@ -22202,6 +22820,14 @@ impl AstNode for JsAnyPropertyModifier {
             JsAnyPropertyModifier::TsReadonlyModifier(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyPropertyModifier::JsStaticModifier(it) => it.syntax,
+            JsAnyPropertyModifier::TsAccessibilityModifier(it) => it.syntax,
+            JsAnyPropertyModifier::TsOverrideModifier(it) => it.syntax,
+            JsAnyPropertyModifier::TsReadonlyModifier(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyPropertyModifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -22257,6 +22883,13 @@ impl AstNode for JsAnyRoot {
             JsAnyRoot::JsExpressionSnipped(it) => &it.syntax,
             JsAnyRoot::JsModule(it) => &it.syntax,
             JsAnyRoot::JsScript(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyRoot::JsExpressionSnipped(it) => it.syntax,
+            JsAnyRoot::JsModule(it) => it.syntax,
+            JsAnyRoot::JsScript(it) => it.syntax,
         }
     }
 }
@@ -22557,6 +23190,42 @@ impl AstNode for JsAnyStatement {
             JsAnyStatement::TsTypeAliasDeclaration(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyStatement::JsBlockStatement(it) => it.syntax,
+            JsAnyStatement::JsBreakStatement(it) => it.syntax,
+            JsAnyStatement::JsClassDeclaration(it) => it.syntax,
+            JsAnyStatement::JsContinueStatement(it) => it.syntax,
+            JsAnyStatement::JsDebuggerStatement(it) => it.syntax,
+            JsAnyStatement::JsDoWhileStatement(it) => it.syntax,
+            JsAnyStatement::JsEmptyStatement(it) => it.syntax,
+            JsAnyStatement::JsExpressionStatement(it) => it.syntax,
+            JsAnyStatement::JsForInStatement(it) => it.syntax,
+            JsAnyStatement::JsForOfStatement(it) => it.syntax,
+            JsAnyStatement::JsForStatement(it) => it.syntax,
+            JsAnyStatement::JsFunctionDeclaration(it) => it.syntax,
+            JsAnyStatement::JsIfStatement(it) => it.syntax,
+            JsAnyStatement::JsLabeledStatement(it) => it.syntax,
+            JsAnyStatement::JsReturnStatement(it) => it.syntax,
+            JsAnyStatement::JsSwitchStatement(it) => it.syntax,
+            JsAnyStatement::JsThrowStatement(it) => it.syntax,
+            JsAnyStatement::JsTryFinallyStatement(it) => it.syntax,
+            JsAnyStatement::JsTryStatement(it) => it.syntax,
+            JsAnyStatement::JsUnknownStatement(it) => it.syntax,
+            JsAnyStatement::JsVariableStatement(it) => it.syntax,
+            JsAnyStatement::JsWhileStatement(it) => it.syntax,
+            JsAnyStatement::JsWithStatement(it) => it.syntax,
+            JsAnyStatement::TsDeclareFunctionDeclaration(it) => it.syntax,
+            JsAnyStatement::TsDeclareStatement(it) => it.syntax,
+            JsAnyStatement::TsEnumDeclaration(it) => it.syntax,
+            JsAnyStatement::TsExternalModuleDeclaration(it) => it.syntax,
+            JsAnyStatement::TsGlobalDeclaration(it) => it.syntax,
+            JsAnyStatement::TsImportEqualsDeclaration(it) => it.syntax,
+            JsAnyStatement::TsInterfaceDeclaration(it) => it.syntax,
+            JsAnyStatement::TsModuleDeclaration(it) => it.syntax,
+            JsAnyStatement::TsTypeAliasDeclaration(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -22663,6 +23332,12 @@ impl AstNode for JsAnySwitchClause {
             JsAnySwitchClause::JsDefaultClause(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnySwitchClause::JsCaseClause(it) => it.syntax,
+            JsAnySwitchClause::JsDefaultClause(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for JsAnySwitchClause {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -22719,6 +23394,12 @@ impl AstNode for JsAnyTemplateElement {
             JsAnyTemplateElement::JsTemplateElement(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsAnyTemplateElement::JsTemplateChunkElement(it) => it.syntax,
+            JsAnyTemplateElement::JsTemplateElement(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for JsAnyTemplateElement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -22769,6 +23450,12 @@ impl AstNode for JsxAnyAttribute {
             JsxAnyAttribute::JsxSpreadAttribute(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsxAnyAttribute::JsxAttribute(it) => it.syntax,
+            JsxAnyAttribute::JsxSpreadAttribute(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for JsxAnyAttribute {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -22817,6 +23504,12 @@ impl AstNode for JsxAnyAttributeName {
         match self {
             JsxAnyAttributeName::JsxName(it) => &it.syntax,
             JsxAnyAttributeName::JsxNamespaceName(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsxAnyAttributeName::JsxName(it) => it.syntax,
+            JsxAnyAttributeName::JsxNamespaceName(it) => it.syntax,
         }
     }
 }
@@ -22881,6 +23574,13 @@ impl AstNode for JsxAnyAttributeValue {
             JsxAnyAttributeValue::JsxExpressionAttributeValue(it) => &it.syntax,
             JsxAnyAttributeValue::JsxString(it) => &it.syntax,
             JsxAnyAttributeValue::JsxAnyTag(it) => it.syntax(),
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsxAnyAttributeValue::JsxExpressionAttributeValue(it) => it.syntax,
+            JsxAnyAttributeValue::JsxString(it) => it.syntax,
+            JsxAnyAttributeValue::JsxAnyTag(it) => it.into_syntax(),
         }
     }
 }
@@ -22963,6 +23663,16 @@ impl AstNode for JsxAnyChild {
             JsxAnyChild::JsxText(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsxAnyChild::JsxElement(it) => it.syntax,
+            JsxAnyChild::JsxExpressionChild(it) => it.syntax,
+            JsxAnyChild::JsxFragment(it) => it.syntax,
+            JsxAnyChild::JsxSelfClosingElement(it) => it.syntax,
+            JsxAnyChild::JsxSpreadChild(it) => it.syntax,
+            JsxAnyChild::JsxText(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for JsxAnyChild {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -23038,6 +23748,14 @@ impl AstNode for JsxAnyElementName {
             JsxAnyElementName::JsxReferenceIdentifier(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsxAnyElementName::JsxMemberName(it) => it.syntax,
+            JsxAnyElementName::JsxName(it) => it.syntax,
+            JsxAnyElementName::JsxNamespaceName(it) => it.syntax,
+            JsxAnyElementName::JsxReferenceIdentifier(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for JsxAnyElementName {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -23086,6 +23804,12 @@ impl AstNode for JsxAnyName {
         match self {
             JsxAnyName::JsxName(it) => &it.syntax,
             JsxAnyName::JsxNamespaceName(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsxAnyName::JsxName(it) => it.syntax,
+            JsxAnyName::JsxNamespaceName(it) => it.syntax,
         }
     }
 }
@@ -23148,6 +23872,13 @@ impl AstNode for JsxAnyObjectName {
             JsxAnyObjectName::JsxReferenceIdentifier(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsxAnyObjectName::JsxMemberName(it) => it.syntax,
+            JsxAnyObjectName::JsxNamespaceName(it) => it.syntax,
+            JsxAnyObjectName::JsxReferenceIdentifier(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for JsxAnyObjectName {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -23203,6 +23934,13 @@ impl AstNode for JsxAnyTag {
             JsxAnyTag::JsxElement(it) => &it.syntax,
             JsxAnyTag::JsxFragment(it) => &it.syntax,
             JsxAnyTag::JsxSelfClosingElement(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            JsxAnyTag::JsxElement(it) => it.syntax,
+            JsxAnyTag::JsxFragment(it) => it.syntax,
+            JsxAnyTag::JsxSelfClosingElement(it) => it.syntax,
         }
     }
 }
@@ -23270,6 +24008,14 @@ impl AstNode for TsAnyExternalModuleDeclarationBody {
             TsAnyExternalModuleDeclarationBody::TsModuleBlock(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            TsAnyExternalModuleDeclarationBody::TsEmptyExternalModuleDeclarationBody(it) => {
+                it.syntax
+            }
+            TsAnyExternalModuleDeclarationBody::TsModuleBlock(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for TsAnyExternalModuleDeclarationBody {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -23328,6 +24074,12 @@ impl AstNode for TsAnyIndexSignatureModifier {
         match self {
             TsAnyIndexSignatureModifier::JsStaticModifier(it) => &it.syntax,
             TsAnyIndexSignatureModifier::TsReadonlyModifier(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            TsAnyIndexSignatureModifier::JsStaticModifier(it) => it.syntax,
+            TsAnyIndexSignatureModifier::TsReadonlyModifier(it) => it.syntax,
         }
     }
 }
@@ -23412,6 +24164,14 @@ impl AstNode for TsAnyMethodSignatureModifier {
             TsAnyMethodSignatureModifier::TsOverrideModifier(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            TsAnyMethodSignatureModifier::JsStaticModifier(it) => it.syntax,
+            TsAnyMethodSignatureModifier::TsAbstractModifier(it) => it.syntax,
+            TsAnyMethodSignatureModifier::TsAccessibilityModifier(it) => it.syntax,
+            TsAnyMethodSignatureModifier::TsOverrideModifier(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for TsAnyMethodSignatureModifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -23474,6 +24234,12 @@ impl AstNode for TsAnyModuleName {
             TsAnyModuleName::TsQualifiedModuleName(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            TsAnyModuleName::TsIdentifierBinding(it) => it.syntax,
+            TsAnyModuleName::TsQualifiedModuleName(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for TsAnyModuleName {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -23533,6 +24299,12 @@ impl AstNode for TsAnyModuleReference {
             TsAnyModuleReference::TsAnyName(it) => it.syntax(),
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            TsAnyModuleReference::TsExternalModuleReference(it) => it.syntax,
+            TsAnyModuleReference::TsAnyName(it) => it.into_syntax(),
+        }
+    }
 }
 impl std::fmt::Debug for TsAnyModuleReference {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -23581,6 +24353,12 @@ impl AstNode for TsAnyName {
         match self {
             TsAnyName::JsReferenceIdentifier(it) => &it.syntax,
             TsAnyName::TsQualifiedName(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            TsAnyName::JsReferenceIdentifier(it) => it.syntax,
+            TsAnyName::TsQualifiedName(it) => it.syntax,
         }
     }
 }
@@ -23653,6 +24431,13 @@ impl AstNode for TsAnyPropertyAnnotation {
             TsAnyPropertyAnnotation::TsDefinitePropertyAnnotation(it) => &it.syntax,
             TsAnyPropertyAnnotation::TsOptionalPropertyAnnotation(it) => &it.syntax,
             TsAnyPropertyAnnotation::TsTypeAnnotation(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            TsAnyPropertyAnnotation::TsDefinitePropertyAnnotation(it) => it.syntax,
+            TsAnyPropertyAnnotation::TsOptionalPropertyAnnotation(it) => it.syntax,
+            TsAnyPropertyAnnotation::TsTypeAnnotation(it) => it.syntax,
         }
     }
 }
@@ -23731,6 +24516,13 @@ impl AstNode for TsAnyPropertyParameterModifier {
             TsAnyPropertyParameterModifier::TsReadonlyModifier(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            TsAnyPropertyParameterModifier::TsAccessibilityModifier(it) => it.syntax,
+            TsAnyPropertyParameterModifier::TsOverrideModifier(it) => it.syntax,
+            TsAnyPropertyParameterModifier::TsReadonlyModifier(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for TsAnyPropertyParameterModifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -23791,6 +24583,12 @@ impl AstNode for TsAnyPropertySignatureAnnotation {
         match self {
             TsAnyPropertySignatureAnnotation::TsOptionalPropertyAnnotation(it) => &it.syntax,
             TsAnyPropertySignatureAnnotation::TsTypeAnnotation(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            TsAnyPropertySignatureAnnotation::TsOptionalPropertyAnnotation(it) => it.syntax,
+            TsAnyPropertySignatureAnnotation::TsTypeAnnotation(it) => it.syntax,
         }
     }
 }
@@ -23897,6 +24695,16 @@ impl AstNode for TsAnyPropertySignatureModifier {
             TsAnyPropertySignatureModifier::TsReadonlyModifier(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            TsAnyPropertySignatureModifier::JsStaticModifier(it) => it.syntax,
+            TsAnyPropertySignatureModifier::TsAbstractModifier(it) => it.syntax,
+            TsAnyPropertySignatureModifier::TsAccessibilityModifier(it) => it.syntax,
+            TsAnyPropertySignatureModifier::TsDeclareModifier(it) => it.syntax,
+            TsAnyPropertySignatureModifier::TsOverrideModifier(it) => it.syntax,
+            TsAnyPropertySignatureModifier::TsReadonlyModifier(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for TsAnyPropertySignatureModifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -23973,6 +24781,13 @@ impl AstNode for TsAnyReturnType {
             TsAnyReturnType::TsType(it) => it.syntax(),
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            TsAnyReturnType::TsAssertsReturnType(it) => it.syntax,
+            TsAnyReturnType::TsPredicateReturnType(it) => it.syntax,
+            TsAnyReturnType::TsType(it) => it.into_syntax(),
+        }
+    }
 }
 impl std::fmt::Debug for TsAnyReturnType {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -24029,6 +24844,12 @@ impl AstNode for TsAnyTemplateElement {
         match self {
             TsAnyTemplateElement::TsTemplateChunkElement(it) => &it.syntax,
             TsAnyTemplateElement::TsTemplateElement(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            TsAnyTemplateElement::TsTemplateChunkElement(it) => it.syntax,
+            TsAnyTemplateElement::TsTemplateElement(it) => it.syntax,
         }
     }
 }
@@ -24108,6 +24929,14 @@ impl AstNode for TsAnyTupleTypeElement {
             TsAnyTupleTypeElement::TsOptionalTupleTypeElement(it) => &it.syntax,
             TsAnyTupleTypeElement::TsRestTupleTypeElement(it) => &it.syntax,
             TsAnyTupleTypeElement::TsType(it) => it.syntax(),
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            TsAnyTupleTypeElement::TsNamedTupleTypeElement(it) => it.syntax,
+            TsAnyTupleTypeElement::TsOptionalTupleTypeElement(it) => it.syntax,
+            TsAnyTupleTypeElement::TsRestTupleTypeElement(it) => it.syntax,
+            TsAnyTupleTypeElement::TsType(it) => it.into_syntax(),
         }
     }
 }
@@ -24234,6 +25063,18 @@ impl AstNode for TsAnyTypeMember {
             TsAnyTypeMember::TsSetterSignatureTypeMember(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            TsAnyTypeMember::JsUnknownMember(it) => it.syntax,
+            TsAnyTypeMember::TsCallSignatureTypeMember(it) => it.syntax,
+            TsAnyTypeMember::TsConstructSignatureTypeMember(it) => it.syntax,
+            TsAnyTypeMember::TsGetterSignatureTypeMember(it) => it.syntax,
+            TsAnyTypeMember::TsIndexSignatureTypeMember(it) => it.syntax,
+            TsAnyTypeMember::TsMethodSignatureTypeMember(it) => it.syntax,
+            TsAnyTypeMember::TsPropertySignatureTypeMember(it) => it.syntax,
+            TsAnyTypeMember::TsSetterSignatureTypeMember(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for TsAnyTypeMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -24300,6 +25141,12 @@ impl AstNode for TsAnyTypePredicateParameterName {
             TsAnyTypePredicateParameterName::TsThisType(it) => &it.syntax,
         }
     }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            TsAnyTypePredicateParameterName::JsReferenceIdentifier(it) => it.syntax,
+            TsAnyTypePredicateParameterName::TsThisType(it) => it.syntax,
+        }
+    }
 }
 impl std::fmt::Debug for TsAnyTypePredicateParameterName {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -24358,6 +25205,12 @@ impl AstNode for TsAnyVariableAnnotation {
         match self {
             TsAnyVariableAnnotation::TsDefiniteVariableAnnotation(it) => &it.syntax,
             TsAnyVariableAnnotation::TsTypeAnnotation(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            TsAnyVariableAnnotation::TsDefiniteVariableAnnotation(it) => it.syntax,
+            TsAnyVariableAnnotation::TsTypeAnnotation(it) => it.syntax,
         }
     }
 }
@@ -24608,6 +25461,44 @@ impl AstNode for TsType {
             TsType::TsUnionType(it) => &it.syntax,
             TsType::TsUnknownType(it) => &it.syntax,
             TsType::TsVoidType(it) => &it.syntax,
+        }
+    }
+    fn into_syntax(self) -> SyntaxNode {
+        match self {
+            TsType::TsAnyType(it) => it.syntax,
+            TsType::TsArrayType(it) => it.syntax,
+            TsType::TsBigIntLiteralType(it) => it.syntax,
+            TsType::TsBigintType(it) => it.syntax,
+            TsType::TsBooleanLiteralType(it) => it.syntax,
+            TsType::TsBooleanType(it) => it.syntax,
+            TsType::TsConditionalType(it) => it.syntax,
+            TsType::TsConstructorType(it) => it.syntax,
+            TsType::TsFunctionType(it) => it.syntax,
+            TsType::TsImportType(it) => it.syntax,
+            TsType::TsIndexedAccessType(it) => it.syntax,
+            TsType::TsInferType(it) => it.syntax,
+            TsType::TsIntersectionType(it) => it.syntax,
+            TsType::TsMappedType(it) => it.syntax,
+            TsType::TsNeverType(it) => it.syntax,
+            TsType::TsNonPrimitiveType(it) => it.syntax,
+            TsType::TsNullLiteralType(it) => it.syntax,
+            TsType::TsNumberLiteralType(it) => it.syntax,
+            TsType::TsNumberType(it) => it.syntax,
+            TsType::TsObjectType(it) => it.syntax,
+            TsType::TsParenthesizedType(it) => it.syntax,
+            TsType::TsReferenceType(it) => it.syntax,
+            TsType::TsStringLiteralType(it) => it.syntax,
+            TsType::TsStringType(it) => it.syntax,
+            TsType::TsSymbolType(it) => it.syntax,
+            TsType::TsTemplateLiteralType(it) => it.syntax,
+            TsType::TsThisType(it) => it.syntax,
+            TsType::TsTupleType(it) => it.syntax,
+            TsType::TsTypeOperatorType(it) => it.syntax,
+            TsType::TsTypeofType(it) => it.syntax,
+            TsType::TsUndefinedType(it) => it.syntax,
+            TsType::TsUnionType(it) => it.syntax,
+            TsType::TsUnknownType(it) => it.syntax,
+            TsType::TsVoidType(it) => it.syntax,
         }
     }
 }
@@ -26432,6 +27323,7 @@ impl AstNode for JsUnknown {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsUnknown {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -26471,6 +27363,7 @@ impl AstNode for JsUnknownAssignment {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsUnknownAssignment {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -26510,6 +27403,7 @@ impl AstNode for JsUnknownBinding {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsUnknownBinding {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -26549,6 +27443,7 @@ impl AstNode for JsUnknownExpression {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsUnknownExpression {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -26588,6 +27483,7 @@ impl AstNode for JsUnknownImportAssertionEntry {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsUnknownImportAssertionEntry {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -26627,6 +27523,7 @@ impl AstNode for JsUnknownMember {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsUnknownMember {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -26666,6 +27563,7 @@ impl AstNode for JsUnknownNamedImportSpecifier {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsUnknownNamedImportSpecifier {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -26705,6 +27603,7 @@ impl AstNode for JsUnknownParameter {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsUnknownParameter {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -26744,6 +27643,7 @@ impl AstNode for JsUnknownStatement {
         }
     }
     fn syntax(&self) -> &SyntaxNode { &self.syntax }
+    fn into_syntax(self) -> SyntaxNode { self.syntax }
 }
 impl std::fmt::Debug for JsUnknownStatement {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
@@ -26788,6 +27688,7 @@ impl AstNode for JsArrayAssignmentPatternElementList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for JsArrayAssignmentPatternElementList {
     type Language = Language;
@@ -26840,6 +27741,7 @@ impl AstNode for JsArrayBindingPatternElementList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for JsArrayBindingPatternElementList {
     type Language = Language;
@@ -26892,6 +27794,7 @@ impl AstNode for JsArrayElementList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for JsArrayElementList {
     type Language = Language;
@@ -26944,6 +27847,7 @@ impl AstNode for JsCallArgumentList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for JsCallArgumentList {
     type Language = Language;
@@ -26996,6 +27900,7 @@ impl AstNode for JsClassMemberList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstNodeList for JsClassMemberList {
     type Language = Language;
@@ -27048,6 +27953,7 @@ impl AstNode for JsConstructorModifierList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstNodeList for JsConstructorModifierList {
     type Language = Language;
@@ -27100,6 +28006,7 @@ impl AstNode for JsConstructorParameterList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for JsConstructorParameterList {
     type Language = Language;
@@ -27152,6 +28059,7 @@ impl AstNode for JsDirectiveList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstNodeList for JsDirectiveList {
     type Language = Language;
@@ -27204,6 +28112,7 @@ impl AstNode for JsExportNamedFromSpecifierList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for JsExportNamedFromSpecifierList {
     type Language = Language;
@@ -27256,6 +28165,7 @@ impl AstNode for JsExportNamedSpecifierList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for JsExportNamedSpecifierList {
     type Language = Language;
@@ -27308,6 +28218,7 @@ impl AstNode for JsImportAssertionEntryList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for JsImportAssertionEntryList {
     type Language = Language;
@@ -27360,6 +28271,7 @@ impl AstNode for JsMethodModifierList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstNodeList for JsMethodModifierList {
     type Language = Language;
@@ -27412,6 +28324,7 @@ impl AstNode for JsModuleItemList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstNodeList for JsModuleItemList {
     type Language = Language;
@@ -27464,6 +28377,7 @@ impl AstNode for JsNamedImportSpecifierList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for JsNamedImportSpecifierList {
     type Language = Language;
@@ -27516,6 +28430,7 @@ impl AstNode for JsObjectAssignmentPatternPropertyList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for JsObjectAssignmentPatternPropertyList {
     type Language = Language;
@@ -27568,6 +28483,7 @@ impl AstNode for JsObjectBindingPatternPropertyList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for JsObjectBindingPatternPropertyList {
     type Language = Language;
@@ -27620,6 +28536,7 @@ impl AstNode for JsObjectMemberList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for JsObjectMemberList {
     type Language = Language;
@@ -27672,6 +28589,7 @@ impl AstNode for JsParameterList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for JsParameterList {
     type Language = Language;
@@ -27724,6 +28642,7 @@ impl AstNode for JsPropertyModifierList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstNodeList for JsPropertyModifierList {
     type Language = Language;
@@ -27776,6 +28695,7 @@ impl AstNode for JsStatementList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstNodeList for JsStatementList {
     type Language = Language;
@@ -27828,6 +28748,7 @@ impl AstNode for JsSwitchCaseList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstNodeList for JsSwitchCaseList {
     type Language = Language;
@@ -27880,6 +28801,7 @@ impl AstNode for JsTemplateElementList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstNodeList for JsTemplateElementList {
     type Language = Language;
@@ -27932,6 +28854,7 @@ impl AstNode for JsVariableDeclaratorList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for JsVariableDeclaratorList {
     type Language = Language;
@@ -27984,6 +28907,7 @@ impl AstNode for JsxAttributeList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstNodeList for JsxAttributeList {
     type Language = Language;
@@ -28036,6 +28960,7 @@ impl AstNode for JsxChildList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstNodeList for JsxChildList {
     type Language = Language;
@@ -28088,6 +29013,7 @@ impl AstNode for TsEnumMemberList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for TsEnumMemberList {
     type Language = Language;
@@ -28140,6 +29066,7 @@ impl AstNode for TsIndexSignatureModifierList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstNodeList for TsIndexSignatureModifierList {
     type Language = Language;
@@ -28192,6 +29119,7 @@ impl AstNode for TsIntersectionTypeElementList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for TsIntersectionTypeElementList {
     type Language = Language;
@@ -28244,6 +29172,7 @@ impl AstNode for TsMethodSignatureModifierList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstNodeList for TsMethodSignatureModifierList {
     type Language = Language;
@@ -28296,6 +29225,7 @@ impl AstNode for TsPropertyParameterModifierList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstNodeList for TsPropertyParameterModifierList {
     type Language = Language;
@@ -28348,6 +29278,7 @@ impl AstNode for TsPropertySignatureModifierList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstNodeList for TsPropertySignatureModifierList {
     type Language = Language;
@@ -28400,6 +29331,7 @@ impl AstNode for TsTemplateElementList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstNodeList for TsTemplateElementList {
     type Language = Language;
@@ -28452,6 +29384,7 @@ impl AstNode for TsTupleTypeElementList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for TsTupleTypeElementList {
     type Language = Language;
@@ -28504,6 +29437,7 @@ impl AstNode for TsTypeArgumentList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for TsTypeArgumentList {
     type Language = Language;
@@ -28556,6 +29490,7 @@ impl AstNode for TsTypeList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for TsTypeList {
     type Language = Language;
@@ -28608,6 +29543,7 @@ impl AstNode for TsTypeMemberList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstNodeList for TsTypeMemberList {
     type Language = Language;
@@ -28660,6 +29596,7 @@ impl AstNode for TsTypeParameterList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for TsTypeParameterList {
     type Language = Language;
@@ -28712,6 +29649,7 @@ impl AstNode for TsUnionTypeVariantList {
         }
     }
     fn syntax(&self) -> &SyntaxNode { self.syntax_list.node() }
+    fn into_syntax(self) -> SyntaxNode { self.syntax_list.into_node() }
 }
 impl AstSeparatedList for TsUnionTypeVariantList {
     type Language = Language;
