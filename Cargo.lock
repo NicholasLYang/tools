@@ -237,7 +237,7 @@ version = "3.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "03746e0c6dd9b5d2d9132ffe0bede35fb5f815604fd371bb42599fd37bc8e483"
 dependencies = [
- "dashmap",
+ "dashmap 4.0.2",
  "once_cell",
  "rustc-hash",
 ]
@@ -385,6 +385,16 @@ checksum = "ccc0a48a9b826acdf4028595adc9db92caea352f7af011a3034acd172a52a0aa"
 dependencies = [
  "quote",
  "syn",
+]
+
+[[package]]
+name = "dashmap"
+version = "4.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e77a43b28d0668df09411cb0bc9a8c2adc40f9a048afe863e05fd43251e8e39c"
+dependencies = [
+ "cfg-if",
+ "num_cpus",
 ]
 
 [[package]]
@@ -1262,10 +1272,14 @@ name = "rome_analyze"
 version = "0.1.0"
 dependencies = [
  "anyhow",
+ "insta",
+ "rome_console",
  "rome_diagnostics",
+ "rome_js_factory",
  "rome_js_parser",
  "rome_js_syntax",
  "rome_rowan",
+ "tests_macros",
  "tracing",
 ]
 
@@ -1456,12 +1470,14 @@ dependencies = [
  "indexmap",
  "parking_lot",
  "rome_analyze",
+ "rome_console",
  "rome_diagnostics",
  "rome_flags",
  "rome_fs",
  "rome_js_formatter",
  "rome_js_parser",
  "rome_js_syntax",
+ "rome_rowan",
  "serde",
  "serde_json",
  "tokio",
@@ -1484,6 +1500,8 @@ dependencies = [
 name = "rome_playground"
 version = "0.0.0"
 dependencies = [
+ "rome_analyze",
+ "rome_console",
  "rome_diagnostics",
  "rome_js_formatter",
  "rome_js_parser",
@@ -1930,7 +1948,7 @@ dependencies = [
  "async-trait",
  "auto_impl",
  "bytes",
- "dashmap",
+ "dashmap 5.2.0",
  "futures",
  "httparse",
  "log",
@@ -2337,6 +2355,7 @@ dependencies = [
  "itertools",
  "pico-args",
  "regex",
+ "rome_analyze",
  "rome_diagnostics",
  "rome_js_formatter",
  "rome_js_parser",

@@ -11,10 +11,11 @@ use std::{
 
 use countme::Count;
 
+#[cfg(target_pointer_width = "64")]
+use crate::utility_types::static_assert;
 use crate::{
     arc::{Arc, HeaderSlice, ThinArc},
     green::{GreenElement, GreenElementRef, RawSyntaxKind},
-    utility_types::static_assert,
     GreenToken, NodeOrToken, TextRange, TextSize,
 };
 
