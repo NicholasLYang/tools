@@ -485,10 +485,14 @@ mod test {
     #[ignore]
     // use this test check if your snippet prints as you wish, without using a snapshot
     fn quick_test() {
-        let src = r#"xyz.a(b!).a(b!).a(b!)
+        let src = r#"
+<>
+<Child />
 
+<Child />O
+</>
 "#;
-        let syntax = SourceType::tsx();
+        let syntax = SourceType::jsx();
         let tree = parse(src, 0, syntax.clone());
         let result = format_node(FormatOptions::default(), &tree.syntax())
             .unwrap()
