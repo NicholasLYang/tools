@@ -22,8 +22,6 @@ mod arc;
 mod ast;
 mod cow_mut;
 pub mod raw_language;
-#[cfg(feature = "serde1")]
-mod serde_impls;
 mod syntax_factory;
 mod syntax_token_text;
 mod tree_builder;
