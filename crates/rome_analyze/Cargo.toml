@@ -18,3 +18,4 @@ rome_diagnostics = { path = "../rome_diagnostics" }
 [dev-dependencies]
 tests_macros = { path = "../tests_macros" }
 insta = { version = "1.10.0", features = ["glob"] }
+countme = { version = "3.0.0", features = ["enable"] }

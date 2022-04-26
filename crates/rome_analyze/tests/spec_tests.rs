@@ -1,4 +1,6 @@
-use std::{ffi::OsStr, fmt::Write, fs::read_to_string, path::Path, slice};
+use std::{
+    ffi::OsStr, fmt::Write, fs::read_to_string, os::raw::c_int, path::Path, slice, sync::Once,
+};
 
 use rome_analyze::{AnalysisFilter, AnalyzerCodeFix, AnalyzerDiagnostic};
 use rome_console::{
@@ -14,6 +16,8 @@ use rome_rowan::AstNode;
 tests_macros::gen_tests! {"tests/specs/**/*.js", crate::run_test, "module"}
 
 fn run_test(input: &'static str, _: &str, _: &str, _: &str) {
+    register_leak_checker();
+
     let input_file = Path::new(input);
     let file_name = input_file.file_name().and_then(OsStr::to_str).unwrap();
     let input_code = read_to_string(input_file)
@@ -125,4 +129,26 @@ fn code_fix_to_string(source: &str, code_fix: AnalyzerCodeFix) -> String {
     markup_to_string(markup! {
         {Diff { mode: DiffMode::Unified, left: source, right: &output }}
     })
+}
+
+// Check that all red / green nodes have correctly been released on exit
+extern "C" fn check_leaks() {
+    let counts = countme::get_all().to_string();
+    if counts != "all counts are zero\n" {
+        panic!("{counts}")
+    }
+}
+
+fn register_leak_checker() {
+    // Import the atexit function from libc
+    extern "C" {
+        fn atexit(f: extern "C" fn()) -> c_int;
+    }
+
+    // Use an atomic Once to register the check_leaks function to be called
+    // when the process exits
+    static ONCE: Once = Once::new();
+    ONCE.call_once(|| unsafe {
+        atexit(check_leaks);
+    });
 }

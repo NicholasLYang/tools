@@ -1272,6 +1272,7 @@ name = "rome_analyze"
 version = "0.1.0"
 dependencies = [
  "anyhow",
+ "countme",
  "insta",
  "rome_console",
  "rome_diagnostics",
