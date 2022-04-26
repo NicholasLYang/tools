@@ -92,8 +92,9 @@ use std::{ptr, rc::Rc};
 use countme::Count;
 pub(crate) use trivia::{SyntaxTrivia, SyntaxTriviaPiecesIterator};
 
+use crate::cursor::node::Siblings;
 pub(crate) use crate::cursor::token::SyntaxToken;
-use crate::{cursor::node::Siblings, green::GreenElement};
+use crate::green::{self, GreenNode, GreenNodeData, GreenToken, GreenTokenData};
 use crate::{
     green::{GreenElementRef, RawSyntaxKind},
     NodeOrToken, TextRange, TextSize,
@@ -103,6 +104,12 @@ pub(crate) use node::{
     Preorder, PreorderWithTokens, SyntaxElementChildren, SyntaxNode, SyntaxNodeChildren,
     SyntaxSlot, SyntaxSlots,
 };
+
+#[derive(Clone, Debug)]
+enum GreenElement {
+    Node { ptr: ptr::NonNull<GreenNodeData> },
+    Token { ptr: ptr::NonNull<GreenTokenData> },
+}
 
 #[derive(Debug)]
 struct _SyntaxElement;
@@ -117,6 +124,23 @@ struct NodeData {
 
     /// Absolute offset for immutable nodes, unused for mutable nodes.
     offset: TextSize,
+}
+
+impl Drop for NodeData {
+    fn drop(&mut self) {
+        if self.parent.is_some() {
+            return;
+        }
+
+        match self.green {
+            GreenElement::Node { ptr } => unsafe {
+                GreenNode::from_raw(ptr);
+            },
+            GreenElement::Token { ptr } => unsafe {
+                GreenToken::from_raw(ptr);
+            },
+        }
+    }
 }
 
 impl NodeData {
@@ -141,8 +165,8 @@ impl NodeData {
     #[inline]
     fn key(&self) -> (ptr::NonNull<()>, TextSize) {
         let ptr = match &self.green {
-            GreenElement::Node(ptr) => ptr::NonNull::from(&**ptr).cast(),
-            GreenElement::Token(ptr) => ptr::NonNull::from(&**ptr).cast(),
+            GreenElement::Node { ptr } => ptr.cast(),
+            GreenElement::Token { ptr } => ptr.cast(),
         };
         (ptr, self.offset())
     }
@@ -163,8 +187,8 @@ impl NodeData {
     #[inline]
     fn green(&self) -> GreenElementRef<'_> {
         match &self.green {
-            GreenElement::Node(ptr) => GreenElementRef::Node(&*ptr),
-            GreenElement::Token(ptr) => GreenElementRef::Token(&*ptr),
+            GreenElement::Node { ptr } => GreenElementRef::Node(unsafe { ptr.as_ref() }),
+            GreenElement::Token { ptr } => GreenElementRef::Token(unsafe { ptr.as_ref() }),
         }
     }
 
@@ -172,8 +196,8 @@ impl NodeData {
     #[inline]
     fn green_siblings(&self) -> Option<Siblings> {
         match &self.parent()?.green {
-            GreenElement::Node(ptr) => Some(Siblings::new(&*ptr, self.slot())),
-            GreenElement::Token(_) => {
+            GreenElement::Node { ptr } => Some(Siblings::new(unsafe { ptr.as_ref() }, self.slot())),
+            GreenElement::Token { .. } => {
                 debug_assert!(
                     false,
                     "A token should never be a parent of a token or node."
@@ -258,7 +282,19 @@ impl NodeData {
     #[must_use]
     fn detach(self: Rc<Self>) -> Rc<Self> {
         match self.parent.is_some() {
-            true => Self::new(None, 0, 0.into(), self.green().to_owned()),
+            true => Self::new(
+                None,
+                0,
+                0.into(),
+                match self.green().to_owned() {
+                    NodeOrToken::Node(ptr) => GreenElement::Node {
+                        ptr: GreenNode::into_raw(ptr),
+                    },
+                    NodeOrToken::Token(ptr) => GreenElement::Token {
+                        ptr: GreenToken::into_raw(ptr),
+                    },
+                },
+            ),
             // If this node is already detached, increment the reference count and return a clone
             false => self.clone(),
         }
@@ -273,7 +309,24 @@ impl NodeData {
         I: Iterator<Item = Option<GreenElement>>,
     {
         let new_green = match self.green() {
-            NodeOrToken::Node(green) => GreenElement::Node(green.splice_slots(range, replace_with)),
+            NodeOrToken::Node(green) => {
+                let green = green.splice_slots(
+                    range,
+                    replace_with.map(|green| {
+                        green.map(|green| match green {
+                            GreenElement::Node { ptr } => {
+                                green::GreenElement::Node(unsafe { GreenNode::from_raw(ptr) })
+                            }
+                            GreenElement::Token { ptr } => {
+                                green::GreenElement::Token(unsafe { GreenToken::from_raw(ptr) })
+                            }
+                        })
+                    }),
+                );
+                GreenElement::Node {
+                    ptr: GreenNode::into_raw(green),
+                }
+            }
             NodeOrToken::Token(_) => unreachable!(),
         };
 
@@ -296,7 +349,7 @@ impl NodeData {
             },
         };
 
-        node.parent = match node.parent {
+        node.parent = match node.parent.take() {
             Some(parent) => {
                 // SAFETY: This conversion can only fail on 16-bits systems for nodes with more than 65 535 children
                 let index = usize::try_from(node.slot).expect("integer overflow");

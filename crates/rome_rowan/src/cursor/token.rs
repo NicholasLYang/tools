@@ -1,10 +1,11 @@
 use crate::cursor::{NodeData, SyntaxElement, SyntaxNode, SyntaxTrivia};
-use crate::green::GreenElement;
 use crate::{Direction, GreenToken, GreenTokenData, RawSyntaxKind, SyntaxTokenText};
 use std::hash::{Hash, Hasher};
 use std::rc::Rc;
-use std::{fmt, iter};
+use std::{fmt, iter, mem};
 use text_size::{TextRange, TextSize};
+
+use super::GreenElement;
 
 #[derive(Clone, Debug)]
 pub(crate) struct SyntaxToken {
@@ -18,14 +19,18 @@ impl SyntaxToken {
         index: u32,
         offset: TextSize,
     ) -> SyntaxToken {
+        let green = GreenElement::Token { ptr: green.into() };
         SyntaxToken {
-            ptr: NodeData::new(Some(parent.ptr), index, offset, green.to_owned().into()),
+            ptr: NodeData::new(Some(parent.ptr), index, offset, green),
         }
     }
 
     pub(crate) fn new_detached(green: GreenToken) -> SyntaxToken {
+        let green = GreenElement::Token {
+            ptr: GreenToken::into_raw(green),
+        };
         SyntaxToken {
-            ptr: NodeData::new(None, 0, TextSize::from(0), green.into()),
+            ptr: NodeData::new(None, 0, TextSize::from(0), green),
         }
     }
 
@@ -47,10 +52,20 @@ impl SyntaxToken {
         self.ptr.as_ref()
     }
 
+    /// Consume this SyntaxToken and extract its inner green token
+    ///
+    /// # Safety
+    /// The green token should be immediately reattached to a new tree,
+    /// dropping the green element without using it *will* leak its content if
+    /// self was a detached token
     #[inline]
     pub(super) fn into_green(self) -> GreenElement {
         match Rc::try_unwrap(self.ptr) {
-            Ok(data) => data.green,
+            Ok(data) => {
+                let ptr = data.green.clone();
+                mem::forget(data);
+                ptr
+            }
             Err(ptr) => ptr.green.clone(),
         }
     }

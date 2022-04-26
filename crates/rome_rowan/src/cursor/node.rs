@@ -1,15 +1,17 @@
 use crate::cursor::{NodeData, SyntaxElement, SyntaxToken, SyntaxTrivia};
-use crate::green::{Child, Children, GreenElement, Slot};
+use crate::green::{Child, Children, Slot};
 use crate::{
     Direction, GreenNode, GreenNodeData, NodeOrToken, RawSyntaxKind, SyntaxNodeText, TokenAtOffset,
     WalkEvent,
 };
 use std::hash::{Hash, Hasher};
 use std::iter::FusedIterator;
-use std::ops;
 use std::rc::Rc;
 use std::{fmt, iter};
+use std::{mem, ops};
 use text_size::{TextRange, TextSize};
+
+use super::GreenElement;
 
 #[derive(Clone)]
 pub(crate) struct SyntaxNode {
@@ -18,8 +20,11 @@ pub(crate) struct SyntaxNode {
 
 impl SyntaxNode {
     pub(crate) fn new_root(green: GreenNode) -> SyntaxNode {
+        let green = GreenElement::Node {
+            ptr: GreenNode::into_raw(green),
+        };
         SyntaxNode {
-            ptr: NodeData::new(None, 0, 0.into(), green.into()),
+            ptr: NodeData::new(None, 0, 0.into(), green),
         }
     }
 
@@ -29,8 +34,9 @@ impl SyntaxNode {
         slot: u32,
         offset: TextSize,
     ) -> SyntaxNode {
+        let green = GreenElement::Node { ptr: green.into() };
         SyntaxNode {
-            ptr: NodeData::new(Some(parent.ptr), slot, offset, green.to_owned().into()),
+            ptr: NodeData::new(Some(parent.ptr), slot, offset, green),
         }
     }
 
@@ -43,10 +49,20 @@ impl SyntaxNode {
         self.ptr.as_ref()
     }
 
+    /// Consume this SyntaxNode and extract its inner green node
+    ///
+    /// # Safety
+    /// The green node should be immediately reattached to a new tree,
+    /// dropping the green element without using it *will* leak the entire
+    /// green tree if self was a root node
     #[inline]
     fn into_green(self) -> GreenElement {
         match Rc::try_unwrap(self.ptr) {
-            Ok(data) => data.green,
+            Ok(data) => {
+                let ptr = data.green.clone();
+                mem::forget(data);
+                ptr
+            }
             Err(ptr) => ptr.green.clone(),
         }
     }
