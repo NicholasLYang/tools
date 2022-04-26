@@ -611,6 +611,9 @@ pub fn generate_nodes(ast: &AstSrc, language_kind: LanguageKind) -> Result<Strin
                     fn syntax_list(&self) -> &SyntaxList {
                         &self.syntax_list
                     }
+                    fn into_syntax_list(self) -> SyntaxList {
+                        self.syntax_list
+                    }
                 }
 
                 impl Debug for #list_name {
@@ -645,6 +648,9 @@ pub fn generate_nodes(ast: &AstSrc, language_kind: LanguageKind) -> Result<Strin
                     type Node = #element_type;
                     fn syntax_list(&self) -> &SyntaxList {
                         &self.syntax_list
+                    }
+                    fn into_syntax_list(self) -> SyntaxList {
+                        self.syntax_list
                     }
                 }
 
